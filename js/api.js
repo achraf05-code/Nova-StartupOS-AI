@@ -18,10 +18,10 @@
      --------------------------------------------------------------------- */
   const SUPABASE_URL = global.SUPABASE_URL
     || localStorage.getItem('nova.supabase_url')
-    || "https://your-project-id.supabase.co";
+    || "https://wcjdtxlhylevzwjqkjss.supabase.co";
   const SUPABASE_ANON_KEY = global.SUPABASE_ANON_KEY
     || localStorage.getItem('nova.supabase_anon_key')
-    || "your-anon-public-key";
+    || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjamR0eGxoeWxldnp3anFranNzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA1ODc4NzUsImV4cCI6MjA5NjE2Mzg3NX0.smIH3GczDcL2NgcGe1EXHQEWcQ9JaZPMueT88VgSios";
 
   // Guard: only create the client when the SDK is present and creds look set.
   const _credsReady = SUPABASE_URL.indexOf('your-project-id') === -1
@@ -39,7 +39,7 @@
 
   const BASE = global.NOVA_API_BASE
     || localStorage.getItem('nova.api_base')
-    || 'http://localhost:8000/api';
+    || 'https://nova-startup-os-ai.vercel.app/api';
 
   const TOKEN_KEY = 'nova.token';
 
